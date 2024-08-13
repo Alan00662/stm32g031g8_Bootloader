@@ -29,24 +29,19 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
-#define Rx_len 		4  	 
 
-extern uint8_t		Rx_Buf[Rx_len];
 /* USER CODE END Includes */
 
-extern UART_HandleTypeDef huart2;
+extern UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN Private defines */
-#define UartHandle huart2
+#define UartHandle huart1
 /* USER CODE END Private defines */
 
-void MX_USART2_UART_Init(void);
+void MX_USART1_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-void uart2_send_one_byte(uint8_t Data);
-void uart2_send_buf(uint8_t *buf, uint8_t len);
-void Serial_PutString(uint8_t *p_string);
-void debug_tx2(char *fmt, ...);
+
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
